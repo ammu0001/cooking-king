@@ -11,7 +11,7 @@ class Recipe extends React.Component{
 			const title = this.props.location.state.recipe;
 
 		const req = await fetch
-		('http://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q='+ title +'&app_id=c5da39b4&app_key=5350b072c90deef413b5f573ed35ed89');
+		('https://api.edamam.com/search?q='+ title +'&app_id=c5da39b4&app_key=5350b072c90deef413b5f573ed35ed89');
 		const res = await req.json();
 		
 		this.setState({ activeRecipe: res.hits[0] });

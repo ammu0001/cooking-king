@@ -20,7 +20,7 @@ class App extends Component {
 	    const recipeName = e.target.elements.recipeName.value;
 	    e.preventDefault();
 
-      const response = await fetch('http://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q='+ recipeName +'&app_id=c5da39b4&app_key=5350b072c90deef413b5f573ed35ed89&from=0&to=24&calories=591-722&health=alcohol-free');
+      const response = await fetch('https://api.edamam.com/search?q='+ recipeName +'&app_id=c5da39b4&app_key=5350b072c90deef413b5f573ed35ed89&from=0&to=24&calories=591-722&health=alcohol-free');
       const data = await response.json();
       this.setState({ recipes: data.hits });
       console.log(this.state.recipes);
