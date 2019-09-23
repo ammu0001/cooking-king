@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
+import Logo from "./logo.png";
+import Logo11 from "./logo1.png";
+
 
 // const API_ID = "c5da39b4";
 // const API_KEY = "5350b072c90deef413b5f573ed35ed89";
@@ -46,7 +49,10 @@ render(){
   return (
 
               <div className ="App">
+
                 <header className="App-header">
+                  <img className = "imge" src={Logo} />
+                  <img className="img1" src={Logo11}/>
                   <h1 className="App-title">Cooking King</h1>
                   <h6 className="App-subtitle">We Provide Thousands of Recipes</h6>              
                 </header>
