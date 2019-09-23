@@ -18,6 +18,7 @@ button:focus {
 .App {
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   text-align: center;
+  background-size: 100%;
 }
 
 .App-header {

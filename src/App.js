@@ -26,18 +26,18 @@ class App extends Component {
       // console.log(data);
   }
 
-  componentDidMount = () => {
-    const json = localStorage.getItem("recipes");
-    const recipes = JSON.parse(json);
-    this.setState({ recipes });
-  }
+  // componentDidMount = () => {
+  //   const json = localStorage.getItem("recipes");
+  //   const recipes = JSON.parse(json);
+  //   this.setState({ recipes });
+  // }
   
-  componentDidUpdate = () => {
+  // componentDidUpdate = () => {
 
-    const recipes = JSON.stringify(this.state.recipes);
-    localStorage.setItem("recipes",recipes); 
+  //   const recipes = JSON.stringify(this.state.recipes);
+  //   localStorage.setItem("recipes",recipes); 
 
-  }
+  // }
 
 render(){
   return (
@@ -48,7 +48,7 @@ render(){
                   <h6 className="App-subtitle">We Provide Thousands of Recipes</h6>
                 </header>
                 < Form getRecipe={this.getRecipe} />
-                 <Recipes recipes={this.state.recipes}/>
+                <Recipes recipes={ this.state.recipes}/>
               </div>
 
     );
